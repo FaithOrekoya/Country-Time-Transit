@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Country Time Transit | Fayetteville Transportation",
+  "description": "Family-operated passenger transportation in Fayetteville, NC. Providing medical, wheelchair-accessible, airport, senior, and regional transit with our commitment: We\u0027re not on time. We\u0027re before time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
