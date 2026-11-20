@@ -210,31 +210,31 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
   return (
     <div className="w-full">
-      {/* Hero Banner in TrackMyTire dark atmospheric style */}
-      <section className="relative overflow-hidden bg-[#0B1320] text-white py-16 lg:py-24 border-b border-slate-800">
+      {/* Hero Banner in Black & Crimson Red atmospheric style */}
+      <section className="relative overflow-hidden bg-[#0A0A0A] text-white py-16 lg:py-24 border-b border-neutral-800">
         <img
           src={contactHeroImg}
           alt="Country Time Transit dispatch and customer care team"
           referrerPolicy="no-referrer"
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1320]/90 via-[#0F1C2E]/75 to-[#102A43]/45 z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/90 via-[#121212]/75 to-[#171717]/45 z-0 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl space-y-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-semibold text-slate-200 backdrop-blur-sm">
-              <Zap className="w-3.5 h-3.5 text-[#F59E0B]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/85 border border-neutral-700/80 text-xs font-semibold text-neutral-200 backdrop-blur-sm">
+              <Zap className="w-3.5 h-3.5 text-[#EF4444]" />
               <span>GET IN TOUCH · PASSENGERS & PARTNER ORGANIZATIONS</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
               Contact Country Time <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#F97316]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#EF4444] via-[#DC2626] to-[#F87171]">
                 Transit Dispatch.
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-neutral-300 leading-relaxed font-normal">
               Whether you are scheduling an individual ride for yourself or a loved one, or exploring a referral partnership for your healthcare facility or organization, our team is ready to assist.
             </p>
 
@@ -243,7 +243,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               <button
                 type="button"
                 onClick={() => scrollToSection('individual-trip-inquiry')}
-                className="px-6 py-3.5 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full shadow-lg shadow-amber-500/25 transition-all inline-flex items-center gap-2 whitespace-nowrap shrink-0"
+                className="px-6 py-3.5 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-lg shadow-red-600/25 transition-all inline-flex items-center gap-2 whitespace-nowrap shrink-0"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Individual Ride Inquiry</span>
@@ -252,9 +252,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               <button
                 type="button"
                 onClick={() => scrollToSection('partnership-inquiry')}
-                className="px-6 py-3.5 bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-600 text-xs font-extrabold rounded-full transition-all inline-flex items-center gap-2 whitespace-nowrap shrink-0"
+                className="px-6 py-3.5 bg-neutral-900/85 hover:bg-neutral-800 text-white border border-neutral-700 text-xs font-extrabold rounded-full transition-all inline-flex items-center gap-2 whitespace-nowrap shrink-0"
               >
-                <Building2 className="w-4 h-4 text-[#F59E0B]" />
+                <Building2 className="w-4 h-4 text-[#EF4444]" />
                 <span>Discuss a Partnership</span>
               </button>
             </div>
@@ -272,39 +272,39 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             {/* Left Contact Information (5 Cols) */}
             <div className="lg:col-span-5 space-y-8">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#DC2626]">
                   DISPATCH & INQUIRIES
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-black text-[#0F172A] mt-1">
+                <h2 className="text-2xl sm:text-3xl font-black text-[#0A0A0A] mt-1">
                   How to Reach Our Team
                 </h2>
-                <p className="text-sm text-slate-600 mt-2 leading-relaxed font-normal">
+                <p className="text-sm text-neutral-600 mt-2 leading-relaxed font-normal">
                   For immediate assistance, same-day scheduling discussions, or detailed ride inquiries, calling us directly is always the fastest option.
                 </p>
               </div>
 
-              {/* Direct Telephone Card in TrackMyTire dark card style */}
-              <div className="p-8 rounded-3xl bg-gradient-to-br from-[#0B1320] via-[#102238] to-[#1E3A8A] text-white space-y-4 shadow-xl border border-slate-800">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#F59E0B] to-[#EA580C] text-white flex items-center justify-center font-bold shadow-md shadow-amber-500/20">
+              {/* Direct Telephone Card in Black & Crimson Red style */}
+              <div className="p-8 rounded-3xl bg-gradient-to-br from-[#0A0A0A] via-[#141414] to-[#1F1F1F] text-white space-y-4 shadow-xl border border-neutral-800">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#EF4444] to-[#B91C1C] text-white flex items-center justify-center font-bold shadow-md shadow-red-600/25">
                   <Phone className="w-7 h-7" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-[11px] font-extrabold text-slate-300 uppercase tracking-widest">
+                  <span className="text-[11px] font-extrabold text-neutral-300 uppercase tracking-widest">
                     Direct Phone Line
                   </span>
                   <p className="text-3xl font-black text-white">
-                    <a href={COMPANY_PHONE_TEL} className="hover:text-[#F59E0B] transition-colors tabular-nums">
+                    <a href={COMPANY_PHONE_TEL} className="hover:text-[#EF4444] transition-colors tabular-nums">
                       {COMPANY_PHONE}
                     </a>
                   </p>
-                  <p className="text-xs text-slate-300 font-normal">
+                  <p className="text-xs text-neutral-300 font-normal">
                     Tap to call directly from any mobile phone or device.
                   </p>
                 </div>
                 <div className="pt-2 flex flex-wrap items-center gap-3">
                   <a
                     href={COMPANY_PHONE_TEL}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-md shadow-red-600/25 transition-all"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call Now</span>
@@ -313,37 +313,37 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   <button
                     type="button"
                     onClick={() => onOpenBooking()}
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all"
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-white hover:bg-neutral-100 text-[#0A0A0A] text-xs font-extrabold rounded-full shadow-md transition-all"
                   >
-                    <Calendar className="w-3.5 h-3.5 text-white" />
+                    <Calendar className="w-3.5 h-3.5 text-[#DC2626]" />
                     <span>Open Ride Modal</span>
                   </button>
                 </div>
               </div>
 
               {/* Details & Commitments */}
-              <div className="space-y-4 text-xs text-slate-600">
-                <div className="p-5 rounded-3xl bg-[#F8FAFC] border border-slate-200 flex items-start gap-3.5">
-                  <MapPin className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
+              <div className="space-y-4 text-xs text-neutral-600">
+                <div className="p-5 rounded-3xl bg-neutral-50 border border-neutral-200 flex items-start gap-3.5">
+                  <MapPin className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-[#0F172A] block text-sm">Service Location</strong>
-                    <span className="font-normal text-slate-600">Fayetteville, North Carolina — serving Cumberland, Hoke, Moore, and neighboring counties.</span>
+                    <strong className="text-[#0A0A0A] block text-sm">Service Location</strong>
+                    <span className="font-normal text-neutral-600">Fayetteville, North Carolina — serving Cumberland, Hoke, Moore, and neighboring counties.</span>
                   </div>
                 </div>
 
-                <div className="p-5 rounded-3xl bg-[#F8FAFC] border border-slate-200 flex items-start gap-3.5">
-                  <Clock className="w-5 h-5 text-[#F59E0B] shrink-0 mt-0.5" />
+                <div className="p-5 rounded-3xl bg-neutral-50 border border-neutral-200 flex items-start gap-3.5">
+                  <Clock className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-[#0F172A] block text-sm">Our Punctuality Promise</strong>
-                    <span className="font-normal text-slate-600">"{COMPANY_TAGLINE}" Trips are planned with calculated arrival buffers.</span>
+                    <strong className="text-[#0A0A0A] block text-sm">Our Punctuality Promise</strong>
+                    <span className="font-normal text-neutral-600">"{COMPANY_TAGLINE}" Trips are planned with calculated arrival buffers.</span>
                   </div>
                 </div>
 
-                <div className="p-5 rounded-3xl bg-[#F8FAFC] border border-slate-200 flex items-start gap-3.5">
-                  <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                <div className="p-5 rounded-3xl bg-neutral-50 border border-neutral-200 flex items-start gap-3.5">
+                  <ShieldCheck className="w-5 h-5 text-[#0A0A0A] shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-[#0F172A] block text-sm">Licensed & Commercially Insured</strong>
-                    <span className="font-normal text-slate-600">Dedicated, safe passenger transportation meeting professional standards.</span>
+                    <strong className="text-[#0A0A0A] block text-sm">Licensed & Commercially Insured</strong>
+                    <span className="font-normal text-neutral-600">Dedicated, safe passenger transportation meeting professional standards.</span>
                   </div>
                 </div>
               </div>
@@ -352,37 +352,37 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
             {/* Right Form Card: Individual Trip Inquiry (7 Cols) */}
             <div className="lg:col-span-7">
-              <div className="bg-[#F8FAFC] rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm">
+              <div className="bg-neutral-50 rounded-3xl p-8 sm:p-10 border border-neutral-200 shadow-sm">
                 
-                <div className="mb-6 pb-4 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="mb-6 pb-4 border-b border-neutral-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
-                    <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#EA580C]">
+                    <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#DC2626]">
                       INDIVIDUAL & FAMILY RIDES
                     </span>
-                    <h3 className="text-2xl font-black text-[#0F172A]">
+                    <h3 className="text-2xl font-black text-[#0A0A0A]">
                       Online Trip Inquiry Form
                     </h3>
-                    <p className="text-xs text-slate-500 mt-1 font-normal">
+                    <p className="text-xs text-neutral-500 mt-1 font-normal">
                       Request a ride for medical appointments, airport transfers, senior mobility, student commutes, or regional travel.
                     </p>
                   </div>
                 </div>
 
                 {tripSubmissionState === 'success' && (
-                  <div className="mb-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
-                    <div className="w-12 h-12 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
-                      <CheckCircle2 className="w-7 h-7" />
+                  <div className="mb-6 p-6 rounded-2xl bg-white border border-neutral-300 text-center space-y-3">
+                    <div className="w-12 h-12 mx-auto rounded-full bg-[#0A0A0A] text-white flex items-center justify-center">
+                      <CheckCircle2 className="w-7 h-7 text-[#EF4444]" />
                     </div>
-                    <h4 className="text-xl font-black text-[#0F172A]">
+                    <h4 className="text-xl font-black text-[#0A0A0A]">
                       Trip Inquiry Submitted
                     </h4>
-                    <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
+                    <p className="text-xs text-neutral-600 max-w-md mx-auto leading-relaxed">
                       Thank you, <strong>{formData.name}</strong>. Our dispatch team will review your request and follow up at <strong>{formData.phone}</strong>.
                     </p>
                     <button
                       type="button"
                       onClick={resetForm}
-                      className="px-5 py-2.5 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full shadow-sm shadow-amber-500/20 transition-all"
+                      className="px-5 py-2.5 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-sm shadow-red-600/20 transition-all"
                     >
                       Reset Form
                     </button>
@@ -390,17 +390,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 )}
 
                 {tripSubmissionState === 'service_unconfigured' && (
-                  <div className="mb-6 p-5 rounded-2xl bg-amber-50 border border-amber-200 space-y-3">
+                  <div className="mb-6 p-5 rounded-2xl bg-red-50 border border-red-200 space-y-3">
                     <div className="flex items-start gap-3">
-                      <Info className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
+                      <Info className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
                       <div className="space-y-1.5">
-                        <h4 className="text-sm font-black text-[#0F172A]">
+                        <h4 className="text-sm font-black text-[#0A0A0A]">
                           Online Form Delivery Pending Backend Configuration
                         </h4>
-                        <p className="text-xs text-slate-700 leading-relaxed">
-                          Your trip details for <strong>{formData.service}</strong> on <strong>{formData.date} at {formData.time}</strong> have been validated, but an automated backend form delivery service (<code className="font-mono text-[11px] bg-white px-1.5 py-0.5 rounded border border-amber-200">VITE_BOOKING_FORM_ENDPOINT</code>) is not yet connected to this website.
+                        <p className="text-xs text-neutral-700 leading-relaxed">
+                          Your trip details for <strong>{formData.service}</strong> on <strong>{formData.date} at {formData.time}</strong> have been validated, but an automated backend form delivery service (<code className="font-mono text-[11px] bg-white px-1.5 py-0.5 rounded border border-red-200">VITE_BOOKING_FORM_ENDPOINT</code>) is not yet connected to this website.
                         </p>
-                        <p className="text-xs font-bold text-[#0F172A]">
+                        <p className="text-xs font-bold text-[#0A0A0A]">
                           To confirm your ride immediately with our dispatchers, please call us directly:
                         </p>
                       </div>
@@ -408,7 +408,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                     <div className="flex flex-wrap items-center gap-3 pt-1 pl-8">
                       <a
                         href={COMPANY_PHONE_TEL}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#F59E0B] to-[#EA580C] text-white text-xs font-extrabold rounded-full shadow-sm"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#DC2626] to-[#991B1B] text-white text-xs font-extrabold rounded-full shadow-sm"
                       >
                         <Phone className="w-3.5 h-3.5" />
                         <span>Call Dispatch: {COMPANY_PHONE}</span>
@@ -416,7 +416,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       <button
                         type="button"
                         onClick={() => setTripSubmissionState('idle')}
-                        className="px-4 py-2 text-xs font-bold text-slate-700 hover:text-slate-900"
+                        className="px-4 py-2 text-xs font-bold text-neutral-700 hover:text-[#0A0A0A]"
                       >
                         Edit Details
                       </button>
@@ -429,8 +429,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* Name & Phone */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="form-name" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Passenger / Contact Name <span className="text-red-500">*</span>
+                      <label htmlFor="form-name" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Passenger / Contact Name <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="text"
@@ -439,18 +439,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="Your full name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.name && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.name}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="form-phone" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Phone Number <span className="text-red-500">*</span>
+                      <label htmlFor="form-phone" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Phone Number <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="tel"
@@ -459,10 +459,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="(910) 000-0000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.phone && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.phone}
                         </p>
                       )}
@@ -472,7 +472,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* Email & Service */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="form-email" className="block text-xs font-bold text-[#0F172A] mb-1">
+                      <label htmlFor="form-email" className="block text-xs font-bold text-[#0A0A0A] mb-1">
                         Email Address
                       </label>
                       <input
@@ -481,24 +481,24 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="name@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.email && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.email}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="form-service" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Service Needed <span className="text-red-500">*</span>
+                      <label htmlFor="form-service" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Service Needed <span className="text-[#DC2626]">*</span>
                       </label>
                       <select
                         id="form-service"
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       >
                         {SERVICES.map((s) => (
                           <option key={s.id} value={s.title}>
@@ -512,8 +512,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* Pickup & Destination */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="form-pickup" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Pickup Location <span className="text-red-500">*</span>
+                      <label htmlFor="form-pickup" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Pickup Location <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="text"
@@ -522,18 +522,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="Street address or facility"
                         value={formData.pickupLocation}
                         onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.pickupLocation && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.pickupLocation}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="form-dest" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Destination <span className="text-red-500">*</span>
+                      <label htmlFor="form-dest" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Destination <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="text"
@@ -542,10 +542,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="Clinic, airport, or address"
                         value={formData.destination}
                         onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.destination && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.destination}
                         </p>
                       )}
@@ -555,8 +555,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* Date & Time */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="form-date" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Preferred Date <span className="text-red-500">*</span>
+                      <label htmlFor="form-date" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Preferred Date <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="date"
@@ -564,18 +564,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         required
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.date && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.date}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="form-time" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Preferred Time <span className="text-red-500">*</span>
+                      <label htmlFor="form-time" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Preferred Time <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="time"
@@ -583,10 +583,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         required
                         value={formData.time}
                         onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {errors.time && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {errors.time}
                         </p>
                       )}
@@ -595,7 +595,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
                   {/* Additional Requirements */}
                   <div>
-                    <label htmlFor="form-message" className="block text-xs font-bold text-[#0F172A] mb-1">
+                    <label htmlFor="form-message" className="block text-xs font-bold text-[#0A0A0A] mb-1">
                       Additional Requirements
                     </label>
                     <textarea
@@ -604,23 +604,23 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       placeholder="Please include any special requests, wheelchair accessibility needs, flight details, or questions..."
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                      className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                     />
                   </div>
 
                   <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <a
                       href={COMPANY_PHONE_TEL}
-                      className="text-xs font-bold text-slate-800 hover:text-[#EA580C] flex items-center gap-1.5"
+                      className="text-xs font-bold text-neutral-800 hover:text-[#DC2626] flex items-center gap-1.5"
                     >
-                      <Phone className="w-3.5 h-3.5 text-[#EA580C]" />
+                      <Phone className="w-3.5 h-3.5 text-[#DC2626]" />
                       <span>Or call us immediately at {COMPANY_PHONE}</span>
                     </a>
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-[#F59E0B] to-[#EA580C] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+                      className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-md shadow-red-600/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? 'Validating & Sending...' : 'Send Trip Inquiry →'}
                     </button>
@@ -638,45 +638,45 @@ export const ContactPage: React.FC<ContactPageProps> = ({
       {/* =========================================================================
           SECTION 2: DEDICATED PARTNERSHIP INQUIRY EXPERIENCE
       ========================================================================= */}
-      <section id="partnership-inquiry" className="py-24 bg-[#F8FAFC] border-t border-slate-200 scroll-mt-20">
+      <section id="partnership-inquiry" className="py-24 bg-[#FAFAFA] border-t border-neutral-200 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             {/* Left Column: Partnership Overview & Direct Contact (5 Cols) */}
             <div className="lg:col-span-5 space-y-6">
               <div className="space-y-3">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C] block">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#DC2626] block">
                   REFERRAL & ORGANIZATION PARTNERSHIPS
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight leading-tight text-balance">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#0A0A0A] tracking-tight leading-tight text-balance">
                   Let's Build a Reliable Transportation Partnership.
                 </h2>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                <p className="text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
                   Are you a healthcare provider, hospital, senior care facility, or organization looking for a dependable transportation provider? We'd love to learn about your transportation needs and explore how Country Time Transit may be able to support your organization.
                 </p>
               </div>
 
               {/* Who We Partner With Summary Cards */}
               <div className="space-y-3">
-                <div className="p-4 rounded-2xl bg-white border border-slate-200 flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-amber-50 text-[#EA580C] flex items-center justify-center shrink-0 mt-0.5">
+                <div className="p-4 rounded-2xl bg-white border border-neutral-200 flex items-start gap-3.5">
+                  <div className="w-9 h-9 rounded-xl bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0 mt-0.5">
                     <HeartHandshake className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-black text-[#0F172A]">Healthcare & Discharge Coordination</h3>
-                    <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                    <h3 className="text-sm font-black text-[#0A0A0A]">Healthcare & Discharge Coordination</h3>
+                    <p className="text-xs text-neutral-600 mt-0.5 leading-relaxed">
                       Punctual non-emergency medical and wheelchair-accessible transport for clinic check-ins, dialysis, therapy, and patient discharges.
                     </p>
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-white border border-slate-200 flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-amber-50 text-[#EA580C] flex items-center justify-center shrink-0 mt-0.5">
+                <div className="p-4 rounded-2xl bg-white border border-neutral-200 flex items-start gap-3.5">
+                  <div className="w-9 h-9 rounded-xl bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0 mt-0.5">
                     <Building2 className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-black text-[#0F172A]">Senior Care, Schools & Employers</h3>
-                    <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                    <h3 className="text-sm font-black text-[#0A0A0A]">Senior Care, Schools & Employers</h3>
+                    <p className="text-xs text-neutral-600 mt-0.5 leading-relaxed">
                       Tailored recurring transportation arrangements for assisted living communities, educational programs, and workforce shift shuttles.
                     </p>
                   </div>
@@ -684,17 +684,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               </div>
 
               {/* Direct Phone Alternative Card */}
-              <div className="p-6 rounded-3xl bg-[#0B1320] text-white space-y-3 border border-slate-800 shadow-lg">
-                <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#F59E0B] block">
+              <div className="p-6 rounded-3xl bg-[#0A0A0A] text-white space-y-3 border border-neutral-800 shadow-lg">
+                <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#EF4444] block">
                   DIRECT PARTNERSHIP LINE
                 </span>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-neutral-300 leading-relaxed">
                   Prefer to discuss referral workflows or recurring organizational scheduling over the phone? Call our team directly:
                 </p>
                 <div className="pt-1 flex flex-wrap items-center gap-3">
                   <a
                     href={COMPANY_PHONE_TEL}
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-[#F59E0B] to-[#EA580C] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all tabular-nums"
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-[#DC2626] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-md shadow-red-600/25 transition-all tabular-nums"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call {COMPANY_PHONE}</span>
@@ -705,49 +705,49 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
             {/* Right Column: Dedicated Partnership Inquiry Form (7 Cols) */}
             <div className="lg:col-span-7">
-              <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm">
-                <div className="mb-6 pb-4 border-b border-slate-200">
-                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#EA580C]">
+              <div className="bg-white rounded-3xl p-8 sm:p-10 border border-neutral-200 shadow-sm">
+                <div className="mb-6 pb-4 border-b border-neutral-200">
+                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#DC2626]">
                     ORGANIZATION & REFERRAL INQUIRY
                   </span>
-                  <h3 className="text-2xl font-black text-[#0F172A] mt-0.5">
+                  <h3 className="text-2xl font-black text-[#0A0A0A] mt-0.5">
                     Partnership Inquiry Form
                   </h3>
-                  <p className="text-xs text-slate-500 mt-1 font-normal">
+                  <p className="text-xs text-neutral-500 mt-1 font-normal">
                     Complete the form below to introduce your organization and outline your transportation requirements.
                   </p>
                 </div>
 
                 {partnerSubmissionState === 'success' && (
-                  <div className="mb-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
-                    <div className="w-12 h-12 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
-                      <CheckCircle2 className="w-7 h-7" />
+                  <div className="mb-6 p-6 rounded-2xl bg-neutral-50 border border-neutral-300 text-center space-y-3">
+                    <div className="w-12 h-12 mx-auto rounded-full bg-[#0A0A0A] text-white flex items-center justify-center">
+                      <CheckCircle2 className="w-7 h-7 text-[#EF4444]" />
                     </div>
-                    <h4 className="text-xl font-black text-[#0F172A]">
+                    <h4 className="text-xl font-black text-[#0A0A0A]">
                       Partnership Inquiry Submitted
                     </h4>
-                    <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
+                    <p className="text-xs text-neutral-600 max-w-md mx-auto leading-relaxed">
                       Thank you, <strong>{partnerData.fullName}</strong> from <strong>{partnerData.organizationName}</strong>. Our management team will review your inquiry and follow up with you shortly.
                     </p>
                   </div>
                 )}
 
                 {partnerSubmissionState === 'service_unconfigured' && (
-                  <div className="mb-6 p-6 rounded-2xl bg-amber-50 border border-amber-200 space-y-4">
+                  <div className="mb-6 p-6 rounded-2xl bg-red-50 border border-red-200 space-y-4">
                     <div className="flex items-start gap-3">
-                      <Info className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
+                      <Info className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
                       <div className="space-y-1.5">
-                        <h4 className="text-sm font-black text-[#0F172A]">
+                        <h4 className="text-sm font-black text-[#0A0A0A]">
                           Form Submission Service Requires Backend Configuration
                         </h4>
-                        <p className="text-xs text-slate-700 leading-relaxed">
+                        <p className="text-xs text-neutral-700 leading-relaxed">
                           {partnerErrorMessage || (
                             <>
-                              Your partnership inquiry for <strong>{partnerData.organizationName}</strong> ({partnerData.organizationType}) has been validated, but an external form submission endpoint (<code className="font-mono text-[11px] bg-white px-1.5 py-0.5 rounded border border-amber-200">VITE_PARTNERSHIP_FORM_ENDPOINT</code>) still needs configuration before inquiries can be transmitted automatically online.
+                              Your partnership inquiry for <strong>{partnerData.organizationName}</strong> ({partnerData.organizationType}) has been validated, but an external form submission endpoint (<code className="font-mono text-[11px] bg-white px-1.5 py-0.5 rounded border border-red-200">VITE_PARTNERSHIP_FORM_ENDPOINT</code>) still needs configuration before inquiries can be transmitted automatically online.
                             </>
                           )}
                         </p>
-                        <p className="text-xs font-bold text-[#0F172A]">
+                        <p className="text-xs font-bold text-[#0A0A0A]">
                           Please connect with our management team directly at {COMPANY_PHONE}, or copy your formatted inquiry details below:
                         </p>
                       </div>
@@ -756,7 +756,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                     <div className="flex flex-wrap items-center gap-3 pl-8">
                       <a
                         href={COMPANY_PHONE_TEL}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#F59E0B] to-[#EA580C] text-white text-xs font-extrabold rounded-full shadow-sm tabular-nums"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#DC2626] to-[#991B1B] text-white text-xs font-extrabold rounded-full shadow-sm tabular-nums"
                       >
                         <Phone className="w-3.5 h-3.5" />
                         <span>Call {COMPANY_PHONE}</span>
@@ -765,7 +765,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       <button
                         type="button"
                         onClick={handleCopyPartnerDetails}
-                        className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white rounded-full text-xs font-extrabold shadow-sm shadow-amber-500/25 transition-all"
+                        className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-[#0A0A0A] hover:bg-neutral-800 text-white rounded-full text-xs font-extrabold shadow-sm transition-all"
                       >
                         {copiedSummary ? (
                           <>
@@ -787,8 +787,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* 1. Full Name & 2. Organization / Company Name */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="partner-full-name" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Full Name <span className="text-red-500">*</span>
+                      <label htmlFor="partner-full-name" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Full Name <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="text"
@@ -797,18 +797,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="Your full name"
                         value={partnerData.fullName}
                         onChange={(e) => setPartnerData({ ...partnerData, fullName: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {partnerErrors.fullName && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {partnerErrors.fullName}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="partner-org-name" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Organization / Company Name <span className="text-red-500">*</span>
+                      <label htmlFor="partner-org-name" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Organization / Company Name <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="text"
@@ -817,10 +817,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="Hospital, clinic, facility, or company"
                         value={partnerData.organizationName}
                         onChange={(e) => setPartnerData({ ...partnerData, organizationName: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {partnerErrors.organizationName && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {partnerErrors.organizationName}
                         </p>
                       )}
@@ -830,8 +830,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* 3. Work Email & 4. Phone Number */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="partner-email" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Work Email <span className="text-red-500">*</span>
+                      <label htmlFor="partner-email" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Work Email <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="email"
@@ -840,18 +840,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="name@organization.org"
                         value={partnerData.workEmail}
                         onChange={(e) => setPartnerData({ ...partnerData, workEmail: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {partnerErrors.workEmail && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {partnerErrors.workEmail}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="partner-phone" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Phone Number <span className="text-red-500">*</span>
+                      <label htmlFor="partner-phone" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Phone Number <span className="text-[#DC2626]">*</span>
                       </label>
                       <input
                         type="tel"
@@ -860,10 +860,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="(910) 000-0000"
                         value={partnerData.phone}
                         onChange={(e) => setPartnerData({ ...partnerData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       />
                       {partnerErrors.phone && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {partnerErrors.phone}
                         </p>
                       )}
@@ -873,14 +873,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   {/* 5. Organization Type & 6. Type of Partnership or Transportation Needed */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="partner-org-type" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Organization Type <span className="text-red-500">*</span>
+                      <label htmlFor="partner-org-type" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Organization Type <span className="text-[#DC2626]">*</span>
                       </label>
                       <select
                         id="partner-org-type"
                         value={partnerData.organizationType}
                         onChange={(e) => setPartnerData({ ...partnerData, organizationType: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       >
                         {ORGANIZATION_TYPES.map((type) => (
                           <option key={type} value={type}>
@@ -889,21 +889,21 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         ))}
                       </select>
                       {partnerErrors.organizationType && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {partnerErrors.organizationType}
                         </p>
                       )}
                     </div>
 
                     <div>
-                      <label htmlFor="partner-need-type" className="block text-xs font-bold text-[#0F172A] mb-1">
-                        Type of Partnership or Transportation Needed <span className="text-red-500">*</span>
+                      <label htmlFor="partner-need-type" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                        Type of Partnership or Transportation Needed <span className="text-[#DC2626]">*</span>
                       </label>
                       <select
                         id="partner-need-type"
                         value={partnerData.partnershipType}
                         onChange={(e) => setPartnerData({ ...partnerData, partnershipType: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                       >
                         {PARTNERSHIP_NEED_TYPES.map((need) => (
                           <option key={need} value={need}>
@@ -912,7 +912,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         ))}
                       </select>
                       {partnerErrors.partnershipType && (
-                        <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                           <AlertCircle className="w-3 h-3" /> {partnerErrors.partnershipType}
                         </p>
                       )}
@@ -921,8 +921,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
                   {/* 7. Estimated Transportation Requirements (optional) */}
                   <div>
-                    <label htmlFor="partner-estimated-req" className="block text-xs font-bold text-[#0F172A] mb-1">
-                      Estimated Transportation Requirements <span className="text-slate-400 font-normal">(Optional)</span>
+                    <label htmlFor="partner-estimated-req" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                      Estimated Transportation Requirements <span className="text-neutral-400 font-normal">(Optional)</span>
                     </label>
                     <input
                       type="text"
@@ -930,14 +930,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       placeholder="e.g. Estimated weekly trips, preferred days/hours, wheelchair accessibility needs..."
                       value={partnerData.estimatedRequirements}
                       onChange={(e) => setPartnerData({ ...partnerData, estimatedRequirements: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                      className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                     />
                   </div>
 
                   {/* 8. Additional Information / Message */}
                   <div>
-                    <label htmlFor="partner-message" className="block text-xs font-bold text-[#0F172A] mb-1">
-                      Additional Information / Message <span className="text-red-500">*</span>
+                    <label htmlFor="partner-message" className="block text-xs font-bold text-[#0A0A0A] mb-1">
+                      Additional Information / Message <span className="text-[#DC2626]">*</span>
                     </label>
                     <textarea
                       id="partner-message"
@@ -946,10 +946,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       placeholder="Tell us about your organization, patient or resident transportation goals, and how we can best coordinate with your team..."
                       value={partnerData.message}
                       onChange={(e) => setPartnerData({ ...partnerData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-[#EA580C]/40"
+                      className="w-full px-4 py-3 rounded-xl border border-neutral-300 text-sm text-[#0A0A0A] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626]/35"
                     />
                     {partnerErrors.message && (
-                      <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
+                      <p className="text-xs text-[#DC2626] mt-1 flex items-center gap-1">
                         <AlertCircle className="w-3 h-3" /> {partnerErrors.message}
                       </p>
                     )}
@@ -958,16 +958,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <a
                       href={COMPANY_PHONE_TEL}
-                      className="text-xs font-bold text-slate-800 hover:text-[#EA580C] flex items-center gap-1.5 tabular-nums"
+                      className="text-xs font-bold text-neutral-800 hover:text-[#DC2626] flex items-center gap-1.5 tabular-nums"
                     >
-                      <Phone className="w-3.5 h-3.5 text-[#EA580C]" />
+                      <Phone className="w-3.5 h-3.5 text-[#DC2626]" />
                       <span>Or call us at {COMPANY_PHONE}</span>
                     </a>
 
                     <button
                       type="submit"
                       disabled={isPartnerSubmitting}
-                      className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs sm:text-sm font-extrabold rounded-full shadow-lg shadow-amber-500/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
+                      className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs sm:text-sm font-extrabold rounded-full shadow-lg shadow-red-600/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
                     >
                       <span>{isPartnerSubmitting ? 'Validating Inquiry...' : 'Submit Partnership Inquiry'}</span>
                       <ArrowRight className="w-4 h-4 text-white" />
@@ -984,4 +984,3 @@ export const ContactPage: React.FC<ContactPageProps> = ({
     </div>
   );
 };
-

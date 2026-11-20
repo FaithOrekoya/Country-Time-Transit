@@ -103,7 +103,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F5F8FC] text-[#526173]">
+    <div className="min-h-screen flex flex-col bg-[#FAFAFA] text-[#404040]">
       <Header
         currentRoute={currentRoute}
         setCurrentRoute={setCurrentRoute}

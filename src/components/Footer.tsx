@@ -14,7 +14,6 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({
   setCurrentRoute,
   onSelectServiceSlug,
-  onOpenBooking,
   onNavigateToPartnership
 }) => {
   const [activeModal, setActiveModal] = useState<'privacy' | 'terms' | null>(null);
@@ -31,7 +30,7 @@ export const Footer: React.FC<FooterProps> = ({
   };
 
   return (
-    <footer className="bg-[#080E18] text-slate-300 border-t border-slate-800">
+    <footer className="bg-[#0A0A0A] text-neutral-300 border-t border-neutral-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           
@@ -41,14 +40,14 @@ export const Footer: React.FC<FooterProps> = ({
               type="button"
               onClick={() => navigateTo('home')}
               aria-label="Country Time Transit Home"
-              className="p-1 rounded-2xl inline-block text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B] cursor-pointer"
+              className="p-1 rounded-2xl inline-block text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#DC2626] cursor-pointer"
             >
               <BrandLogo size="md" lightMode={true} />
             </button>
-            <p className="text-sm text-slate-400 leading-relaxed font-normal">
+            <p className="text-sm text-neutral-400 leading-relaxed font-normal">
               Family-operated transportation services focused on safety, comfort, and punctuality throughout Fayetteville and surrounding North Carolina communities.
             </p>
-            <div className="pt-2 flex items-center gap-2 text-xs text-[#F59E0B]">
+            <div className="pt-2 flex items-center gap-2 text-xs text-[#EF4444]">
               <span className="font-extrabold italic">"{COMPANY_TAGLINE}"</span>
             </div>
           </div>
@@ -62,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => navigateTo('home')}
-                  className="hover:text-[#F59E0B] transition-colors text-left"
+                  className="hover:text-[#EF4444] transition-colors text-left"
                 >
                   Home
                 </button>
@@ -70,7 +69,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => navigateTo('about')}
-                  className="hover:text-[#F59E0B] transition-colors text-left"
+                  className="hover:text-[#EF4444] transition-colors text-left"
                 >
                   About Us
                 </button>
@@ -78,7 +77,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => navigateTo('services')}
-                  className="hover:text-[#F59E0B] transition-colors text-left"
+                  className="hover:text-[#EF4444] transition-colors text-left"
                 >
                   Services
                 </button>
@@ -86,7 +85,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => navigateTo('service-areas')}
-                  className="hover:text-[#F59E0B] transition-colors text-left"
+                  className="hover:text-[#EF4444] transition-colors text-left"
                 >
                   Service Areas
                 </button>
@@ -94,7 +93,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={onNavigateToPartnership}
-                  className="hover:text-[#F59E0B] transition-colors text-left"
+                  className="hover:text-[#EF4444] transition-colors text-left"
                 >
                   Partnerships
                 </button>
@@ -102,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({
               <li>
                 <button
                   onClick={() => navigateTo('contact')}
-                  className="hover:text-[#F59E0B] transition-colors text-left"
+                  className="hover:text-[#EF4444] transition-colors text-left"
                 >
                   Contact
                 </button>
@@ -120,16 +119,16 @@ export const Footer: React.FC<FooterProps> = ({
                 <li key={s.id}>
                   <button
                     onClick={() => handleServiceClick(s.slug)}
-                    className="hover:text-[#F59E0B] transition-colors text-left text-slate-400"
+                    className="hover:text-[#EF4444] transition-colors text-left text-neutral-400"
                   >
                     {s.title}
                   </button>
                 </li>
               ))}
-              <li className="pt-2 border-t border-slate-800/80">
+              <li className="pt-2 border-t border-neutral-800/80">
                 <button
                   onClick={onNavigateToPartnership}
-                  className="text-[#F59E0B] hover:text-white transition-colors text-left font-bold"
+                  className="text-[#EF4444] hover:text-white transition-colors text-left font-bold"
                 >
                   Become a Referral Partner →
                 </button>
@@ -145,31 +144,31 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="space-y-3 text-sm">
               <a
                 href={COMPANY_PHONE_TEL}
-                className="flex items-center gap-2.5 text-white hover:text-[#F59E0B] transition-colors font-bold"
+                className="flex items-center gap-2.5 text-white hover:text-[#EF4444] transition-colors font-bold"
               >
-                <Phone className="w-4 h-4 text-[#F59E0B]" />
+                <Phone className="w-4 h-4 text-[#EF4444]" />
                 <span className="tabular-nums">{COMPANY_PHONE}</span>
               </a>
 
-              <div className="flex items-start gap-2.5 text-slate-400 text-xs">
-                <MapPin className="w-4 h-4 text-[#EA580C] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 text-neutral-400 text-xs">
+                <MapPin className="w-4 h-4 text-[#EF4444] shrink-0 mt-0.5" />
                 <span>Service Location: Fayetteville, North Carolina</span>
               </div>
 
-              <div className="flex items-center gap-2 text-xs text-slate-400">
-                <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              <div className="flex items-center gap-2 text-xs text-neutral-400">
+                <ShieldCheck className="w-4 h-4 text-white" />
                 <span>Licensed and Insured Transportation</span>
               </div>
 
-              <div className="flex items-center gap-2 text-xs text-slate-400">
-                <HeartHandshake className="w-4 h-4 text-[#F59E0B]" />
+              <div className="flex items-center gap-2 text-xs text-neutral-400">
+                <HeartHandshake className="w-4 h-4 text-[#EF4444]" />
                 <span>Family-Operated Since Inception</span>
               </div>
 
               <div className="pt-2">
                 <button
                   onClick={() => navigateTo('contact')}
-                  className="w-full px-5 py-2.5 bg-gradient-to-r from-[#F59E0B] to-[#EA580C] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all text-center flex items-center justify-center gap-1.5"
+                  className="w-full px-5 py-2.5 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-md shadow-red-600/25 transition-all text-center flex items-center justify-center gap-1.5"
                 >
                   <span>Contact Our Team</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -180,7 +179,7 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Bottom Legal Bar */}
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-12 pt-8 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <div>
             © {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.
           </div>
@@ -188,14 +187,14 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="flex items-center gap-6">
             <button
               onClick={() => setActiveModal('privacy')}
-              className="hover:text-slate-300 transition-colors"
+              className="hover:text-neutral-300 transition-colors"
             >
               Privacy Policy
             </button>
             <span aria-hidden="true">·</span>
             <button
               onClick={() => setActiveModal('terms')}
-              className="hover:text-slate-300 transition-colors"
+              className="hover:text-neutral-300 transition-colors"
             >
               Terms of Service
             </button>
@@ -208,13 +207,13 @@ export const Footer: React.FC<FooterProps> = ({
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
         >
-          <div className="bg-white text-slate-800 rounded-3xl max-w-lg w-full p-7 shadow-2xl border border-slate-200 space-y-4">
-            <h4 className="text-xl font-black text-[#0F172A]">
+          <div className="bg-white text-neutral-800 rounded-3xl max-w-lg w-full p-7 shadow-2xl border border-neutral-200 space-y-4">
+            <h4 className="text-xl font-black text-[#0A0A0A]">
               {activeModal === 'privacy' ? 'Privacy Policy' : 'Terms of Service'}
             </h4>
-            <div className="text-xs text-slate-600 space-y-2 max-h-60 overflow-y-auto leading-relaxed">
+            <div className="text-xs text-neutral-600 space-y-2 max-h-60 overflow-y-auto leading-relaxed">
               {activeModal === 'privacy' ? (
                 <>
                   <p>
@@ -238,7 +237,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="pt-2 text-right">
               <button
                 onClick={() => setActiveModal(null)}
-                className="px-6 py-2.5 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all"
+                className="px-6 py-2.5 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full shadow-md shadow-red-600/25 transition-all"
               >
                 Close
               </button>

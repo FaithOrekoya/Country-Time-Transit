@@ -83,41 +83,41 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   return (
     <div className="w-full">
       {/* Breadcrumb Bar */}
-      <div className="bg-[#050B14] text-slate-300 py-3.5 border-b border-slate-800">
+      <div className="bg-[#050505] text-neutral-300 py-3.5 border-b border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-xs">
           <button
             onClick={() => {
               setCurrentRoute('services');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white font-medium transition-colors"
+            className="inline-flex items-center gap-1.5 text-neutral-300 hover:text-white font-medium transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Back to All Services</span>
           </button>
 
-          <span className="text-[#F59E0B] font-bold hidden sm:inline">
+          <span className="text-[#EF4444] font-bold hidden sm:inline">
             "{COMPANY_TAGLINE}"
           </span>
         </div>
       </div>
 
-      {/* Hero Section in TrackMyTire dark atmospheric style */}
-      <section className="relative overflow-hidden bg-[#0B1320] text-white py-16 lg:py-24 border-b border-slate-800">
+      {/* Hero Section in Black & Crimson Red atmospheric style */}
+      <section className="relative overflow-hidden bg-[#0A0A0A] text-white py-16 lg:py-24 border-b border-neutral-800">
         <img
           src={getServiceHeroImage()}
           alt={`Country Time Transit ${service.title}`}
           referrerPolicy="no-referrer"
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1320]/90 via-[#0F1C2E]/75 to-[#102A43]/45 z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/90 via-[#121212]/75 to-[#171717]/45 z-0 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-semibold text-slate-200 backdrop-blur-sm">
-                <Zap className="w-3.5 h-3.5 text-[#F59E0B]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/85 border border-neutral-700/80 text-xs font-semibold text-neutral-200 backdrop-blur-sm">
+                <Zap className="w-3.5 h-3.5 text-[#EF4444]" />
                 <span>SPECIALTY SERVICE · FAYETTEVILLE</span>
               </div>
 
@@ -126,19 +126,19 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               </h1>
 
               {service.headline && (
-                <p className="text-lg sm:text-xl font-bold text-[#F59E0B] leading-snug max-w-2xl">
+                <p className="text-lg sm:text-xl font-bold text-[#EF4444] leading-snug max-w-2xl">
                   {service.headline}
                 </p>
               )}
 
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+              <p className="text-base sm:text-lg text-neutral-300 leading-relaxed max-w-2xl font-normal">
                 {service.shortDescription}
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <button
                   onClick={() => onOpenBooking(service.title)}
-                  className="px-8 py-4 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white font-extrabold text-xs rounded-full shadow-lg shadow-amber-500/30 transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white font-extrabold text-xs rounded-full shadow-lg shadow-red-600/30 transition-all flex items-center gap-2"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Book This Service</span>
@@ -147,9 +147,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
                 <a
                   href={COMPANY_PHONE_TEL}
-                  className="px-7 py-4 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-white font-bold text-xs rounded-full transition-all flex items-center gap-2"
+                  className="px-7 py-4 bg-neutral-900/85 hover:bg-neutral-800 border border-neutral-700 text-white font-bold text-xs rounded-full transition-all flex items-center gap-2"
                 >
-                  <Phone className="w-4 h-4 text-[#F59E0B]" />
+                  <Phone className="w-4 h-4 text-[#EF4444]" />
                   <span>Call {COMPANY_PHONE}</span>
                 </a>
               </div>
@@ -168,30 +168,30 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             <div className="lg:col-span-8 space-y-12">
               
               <div className="space-y-5">
-                <h2 className="text-2xl sm:text-3xl font-black text-[#0F172A]">
+                <h2 className="text-2xl sm:text-3xl font-black text-[#0A0A0A]">
                   Service Overview & Commitment
                 </h2>
 
                 {service.overviewParagraphs && service.overviewParagraphs.length > 0 ? (
                   <div className="space-y-4">
                     {service.overviewParagraphs.map((paragraph, idx) => (
-                      <p key={idx} className="text-base text-slate-600 leading-relaxed font-normal">
+                      <p key={idx} className="text-base text-neutral-600 leading-relaxed font-normal">
                         {paragraph}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p className="text-base text-slate-600 leading-relaxed font-normal">
+                  <p className="text-base text-neutral-600 leading-relaxed font-normal">
                     {service.fullDescription}
                   </p>
                 )}
 
                 {service.highlightBanner && (
-                  <div className="p-6 rounded-3xl bg-gradient-to-r from-amber-50 to-orange-50/70 border border-amber-200/80 flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-2xl bg-[#EA580C] text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="p-6 rounded-3xl bg-red-50/80 border border-red-200/90 flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-2xl bg-[#DC2626] text-white flex items-center justify-center shrink-0 mt-0.5">
                       <ShieldCheck className="w-5 h-5" />
                     </div>
-                    <p className="text-sm sm:text-base font-bold text-[#0F172A] leading-relaxed">
+                    <p className="text-sm sm:text-base font-bold text-[#0A0A0A] leading-relaxed">
                       {service.highlightBanner}
                     </p>
                   </div>
@@ -200,13 +200,13 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
               {/* Detailed How It Works / Service Process */}
               {service.processParagraphs && service.processParagraphs.length > 0 && (
-                <div className="space-y-4 pt-4 border-t border-slate-200">
-                  <h3 className="text-xl sm:text-2xl font-black text-[#0F172A]">
+                <div className="space-y-4 pt-4 border-t border-neutral-200">
+                  <h3 className="text-xl sm:text-2xl font-black text-[#0A0A0A]">
                     {service.processTitle || `How ${service.title} Works in Fayetteville`}
                   </h3>
                   <div className="space-y-4">
                     {service.processParagraphs.map((paragraph, idx) => (
-                      <p key={idx} className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                      <p key={idx} className="text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
                         {paragraph}
                       </p>
                     ))}
@@ -215,18 +215,18 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               )}
 
               {/* Benefits */}
-              <div className="space-y-4 pt-4 border-t border-slate-200">
-                <h3 className="text-xl font-bold text-[#0F172A]">
+              <div className="space-y-4 pt-4 border-t border-neutral-200">
+                <h3 className="text-xl font-bold text-[#0A0A0A]">
                   Key Passenger Benefits
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, idx) => (
                     <div
                       key={idx}
-                      className="p-5 rounded-3xl bg-[#F8FAFC] border border-slate-200 flex items-start gap-3"
+                      className="p-5 rounded-3xl bg-neutral-50 border border-neutral-200 flex items-start gap-3"
                     >
-                      <ShieldCheck className="w-5 h-5 text-[#EA580C] shrink-0 mt-0.5" />
-                      <span className="text-xs text-slate-700 leading-relaxed font-medium">
+                      <ShieldCheck className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
+                      <span className="text-xs text-neutral-700 leading-relaxed font-medium">
                         {benefit}
                       </span>
                     </div>
@@ -236,13 +236,13 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
               {/* Service Features */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#0F172A]">
+                <h3 className="text-xl font-bold text-[#0A0A0A]">
                   Equipment & Standards
                 </h3>
-                <div className="p-7 rounded-3xl bg-[#F8FAFC] border border-slate-200 space-y-3.5">
+                <div className="p-7 rounded-3xl bg-neutral-50 border border-neutral-200 space-y-3.5">
                   {service.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-3 text-xs text-[#0F172A] font-bold">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <div key={idx} className="flex items-center gap-3 text-xs text-[#0A0A0A] font-bold">
+                      <CheckCircle2 className="w-4 h-4 text-[#DC2626] shrink-0" />
                       <span>{feature}</span>
                     </div>
                   ))}
@@ -251,12 +251,12 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
               {/* Ideal For */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#0F172A]">
+                <h3 className="text-xl font-bold text-[#0A0A0A]">
                   Recommended For
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                   {service.idealFor.map((item, idx) => (
-                    <div key={idx} className="p-3.5 bg-white border border-slate-200 rounded-2xl text-slate-700 font-medium">
+                    <div key={idx} className="p-3.5 bg-white border border-neutral-200 rounded-2xl text-neutral-700 font-medium">
                       • {item}
                     </div>
                   ))}
@@ -265,25 +265,25 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
               {/* Service Specific FAQ */}
               {service.faqs && service.faqs.length > 0 && (
-                <div className="space-y-4 pt-4 border-t border-slate-200">
+                <div className="space-y-4 pt-4 border-t border-neutral-200">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <HelpCircle className="w-5 h-5 text-[#EA580C]" />
-                      <h3 className="text-xl sm:text-2xl font-black text-[#0F172A]">
+                      <HelpCircle className="w-5 h-5 text-[#DC2626]" />
+                      <h3 className="text-xl sm:text-2xl font-black text-[#0A0A0A]">
                         {service.faqSectionTitle || 'Frequently Asked Questions'}
                       </h3>
                     </div>
                     {service.faqSectionIntro && (
-                      <p className="text-sm text-slate-600 leading-relaxed font-normal">
+                      <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                         {service.faqSectionIntro}
                       </p>
                     )}
                   </div>
                   <div className="grid grid-cols-1 gap-3.5 pt-1">
                     {service.faqs.map((faq, idx) => (
-                      <div key={idx} className="p-6 rounded-2xl bg-[#F8FAFC] border border-slate-200 text-xs sm:text-sm space-y-2">
-                        <p className="font-extrabold text-[#0F172A]">{faq.q}</p>
-                        <p className="text-slate-600 leading-relaxed font-normal">{faq.a}</p>
+                      <div key={idx} className="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 text-xs sm:text-sm space-y-2">
+                        <p className="font-extrabold text-[#0A0A0A]">{faq.q}</p>
+                        <p className="text-neutral-600 leading-relaxed font-normal">{faq.a}</p>
                       </div>
                     ))}
                   </div>
@@ -295,27 +295,27 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             {/* Right Sidebar (4 Cols) */}
             <div className="lg:col-span-4 space-y-6">
               
-              {/* Quick Booking Card in TrackMyTire Dark Card Style */}
-              <div className="p-7 rounded-3xl bg-gradient-to-br from-[#0B1320] via-[#102238] to-[#1E3A8A] text-white space-y-4 shadow-xl border border-slate-800 sticky top-28">
-                <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#F59E0B]">
+              {/* Quick Booking Card in Dark Black & Red Style */}
+              <div className="p-7 rounded-3xl bg-gradient-to-br from-[#0A0A0A] via-[#141414] to-[#1F1F1F] text-white space-y-4 shadow-xl border border-neutral-800 sticky top-28">
+                <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#EF4444]">
                   DISPATCH RESERVATION
                 </span>
                 <h3 className="text-2xl font-black text-white">
                   Schedule {service.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed font-normal">
+                <p className="text-xs text-neutral-300 leading-relaxed font-normal">
                   Tell us your pickup location, destination, and schedule. We will reach out promptly to confirm your trip arrangements.
                 </p>
 
-                <div className="p-3.5 rounded-2xl bg-white/10 text-xs text-slate-200 flex items-center gap-2.5 border border-white/10">
-                  <Clock className="w-4 h-4 text-[#F59E0B] shrink-0" />
+                <div className="p-3.5 rounded-2xl bg-white/10 text-xs text-neutral-200 flex items-center gap-2.5 border border-white/10">
+                  <Clock className="w-4 h-4 text-[#EF4444] shrink-0" />
                   <span>Early-Arrival Guarantee: Before time, every time.</span>
                 </div>
 
                 <div className="pt-2 space-y-2.5">
                   <button
                     onClick={() => onOpenBooking(service.title)}
-                    className="w-full py-3.5 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full transition-all shadow-md shadow-amber-500/25 flex items-center justify-center gap-2"
+                    className="w-full py-3.5 bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white text-xs font-extrabold rounded-full transition-all shadow-md shadow-red-600/25 flex items-center justify-center gap-2"
                   >
                     <span>Request This Ride Online</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -323,9 +323,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 
                   <a
                     href={COMPANY_PHONE_TEL}
-                    className="w-full py-3 bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white text-xs font-extrabold rounded-full shadow-md shadow-amber-500/25 transition-all flex items-center justify-center gap-2"
+                    className="w-full py-3 bg-white hover:bg-neutral-100 text-[#0A0A0A] text-xs font-extrabold rounded-full shadow-md transition-all flex items-center justify-center gap-2"
                   >
-                    <Phone className="w-3.5 h-3.5 text-white" />
+                    <Phone className="w-3.5 h-3.5 text-[#DC2626]" />
                     <span>Or Call (910) 364-1102</span>
                   </a>
                 </div>
@@ -338,14 +338,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
       </section>
 
       {/* Related Services */}
-      <section className="py-20 bg-[#F8FAFC] border-t border-slate-200">
+      <section className="py-20 bg-[#FAFAFA] border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#DC2626]">
                 EXPLORE FURTHER
               </span>
-              <h2 className="text-2xl font-black text-[#0F172A]">
+              <h2 className="text-2xl font-black text-[#0A0A0A]">
                 Related Transportation Services
               </h2>
             </div>
@@ -354,7 +354,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 setCurrentRoute('services');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="text-xs font-bold text-[#EA580C] hover:underline"
+              className="text-xs font-bold text-[#DC2626] hover:underline"
             >
               View All 11 Services →
             </button>
@@ -364,23 +364,23 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             {relatedServices.map((rel) => (
               <div
                 key={rel.id}
-                className="p-7 rounded-3xl bg-white border border-slate-200 shadow-sm hover:border-amber-300 transition-all flex flex-col justify-between"
+                className="p-7 rounded-3xl bg-white border border-neutral-200 shadow-sm hover:border-red-300 transition-all flex flex-col justify-between"
               >
                 <div className="space-y-2">
-                  <h4 className="text-base font-black text-[#0F172A]">{rel.title}</h4>
-                  <p className="text-xs text-slate-600 line-clamp-2 font-normal">{rel.shortDescription}</p>
+                  <h4 className="text-base font-black text-[#0A0A0A]">{rel.title}</h4>
+                  <p className="text-xs text-neutral-600 line-clamp-2 font-normal">{rel.shortDescription}</p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                <div className="pt-4 mt-4 border-t border-neutral-100 flex items-center justify-between">
                   <button
                     onClick={() => handleRelatedClick(rel.slug)}
-                    className="text-xs font-bold text-[#EA580C] inline-flex items-center gap-1 hover:underline"
+                    className="text-xs font-bold text-[#DC2626] inline-flex items-center gap-1 hover:underline"
                   >
                     <span>Details</span>
                     <ChevronRight className="w-3.5 h-3.5" />
                   </button>
                   <button
                     onClick={() => onOpenBooking(rel.title)}
-                    className="text-xs font-extrabold px-4 py-1.5 rounded-full bg-gradient-to-r from-[#F59E0B] via-[#EA580C] to-[#D97706] hover:from-[#d97706] hover:to-[#ea580c] text-white shadow-sm shadow-amber-500/20 transition-all"
+                    className="text-xs font-extrabold px-4 py-1.5 rounded-full bg-gradient-to-r from-[#DC2626] via-[#B91C1C] to-[#991B1B] hover:from-[#B91C1C] hover:to-[#7F1D1D] text-white shadow-sm shadow-red-600/20 transition-all"
                   >
                     Book
                   </button>
